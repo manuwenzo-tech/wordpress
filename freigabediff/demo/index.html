@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FreigabeDiff · Review canvas</title>
+<link rel="stylesheet" href="style.css"><script defer src="demo.js"></script>
+</head>
+<body>
+<header class="bar"><div class="shell top"><strong class="brand"><span aria-hidden="true">±</span> FreigabeDiff</strong><button class="play" id="play" type="button">▶ Play walkthrough</button></div></header>
+<main class="shell">
+<header class="heading"><div><p>Sample page / FD-014</p><h1>Review canvas</h1></div><ol aria-label="Review progress"><li aria-current="step">Proposed</li><li>In review</li><li>Published</li></ol></header>
+<div class="workspace">
+<section class="canvas" aria-labelledby="canvas-label">
+<div class="canvas-bar"><strong id="canvas-label">Sample page preview</strong><div class="switch" role="group" aria-label="Page version"><button type="button" data-view="live" aria-pressed="false">Live</button><button type="button" data-view="draft" aria-pressed="true">Proposed</button></div></div>
+<article class="page">
+<div class="poster"><div class="poster-copy"><p>BERLIN LANGUAGE STUDIO</p><h2>Evening<br>language<br>classes<span>.</span></h2></div><div class="letter" aria-hidden="true">Aa</div></div>
+<div class="course">
+<p>Classes run on Tuesdays and Thursdays, 18:30–20:00.</p>
+<dl><div><dt>Course fee</dt><dd><button type="button" class="hotspot" data-edit="0" aria-pressed="true"><span class="value">€195</span><span class="pin" aria-hidden="true">1</span></button> <small>per term</small></dd></div><div><dt>Registration closes</dt><dd><button type="button" class="hotspot" data-edit="1" aria-pressed="false"><span class="value">14 December</span><span class="pin" aria-hidden="true">2</span></button></dd></div></dl>
+</div>
+</article>
+</section>
+<aside class="review" aria-labelledby="review-title">
+<div class="review-head"><h2 id="review-title">Change inspector</h2><span id="badge">Proposed</span></div>
+<div class="edits" role="group" aria-label="Proposed edits"><button type="button" data-edit="0" aria-pressed="true"><span>01</span> Course fee</button><button type="button" data-edit="1" aria-pressed="false"><span>02</span> Registration deadline</button></div>
+<div class="diff" aria-live="polite"><div><small>Previous value</small><del id="before">€180</del></div><div><small>Proposed value</small><ins id="after">€195</ins></div></div>
+<label id="feedback" hidden>Review note<textarea id="note" rows="2" placeholder="Leave a note for the editor"></textarea></label>
+<p id="result" role="status" hidden></p>
+<button type="button" class="action" id="advance">Start review</button>
+<button type="button" class="text-button" id="conflict" hidden>Simulate a newer live edit</button>
+</aside>
+</div>
+</main>
+</body>
+</html>

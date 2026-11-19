@@ -1,0 +1,29 @@
+@font-face{font-family:Manrope;src:url(fonts/manrope-latin-wght-normal.woff2) format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
+.fd{--ink:#13241d;--paper:#fffef9;--line:#c9d3c7;--green:#084b37;--mint:#e5f6e4;--peach:#ffbaa8;--indigo:#4332a1;color:var(--ink);font:500 15px/1.5 Manrope,system-ui,sans-serif}
+.fd *, .fd *::before, .fd *::after{box-sizing:border-box}
+.fd-brand{display:flex;align-items:center;gap:9px;margin:16px 0}
+.fd-brand span{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:var(--indigo);color:#fff;font:750 24px/1 Georgia,serif}
+.fd-brand h1{padding:0;font-size:clamp(1.55rem,4vw,2.3rem);font-weight:800;color:var(--ink);letter-spacing:-.05em}
+.fd-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0}
+.fd-workspace{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,310px);gap:14px;align-items:start}
+.fd-reference{font:700 .75rem ui-monospace,monospace;text-transform:uppercase}
+.fd-card h2{font-size:1.25rem;margin:0 0 10px;color:var(--ink)}
+.fd-card p{font-size:inherit}
+.fd-card textarea{display:block;width:100%;margin:6px 0 10px;font-family:ui-monospace,monospace}
+.fd-list{padding:0;margin:0;list-style:none}
+.fd-list li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:7px;padding:8px 0;border-top:1px solid var(--line)}
+.fd-badge,.fd-notice{background:var(--mint);color:var(--green);padding:5px 8px;border-radius:5px;font-weight:750}
+.fd-compare{margin-top:12px}
+.fd-compare h3{background:var(--peach);padding:10px 12px;margin:0;border-radius:6px}
+.fd table.diff{table-layout:fixed;width:100%;overflow-wrap:anywhere}
+.fd td.diff-deletedline,.fd del{background:#ffe1d7;color:#792d21}
+.fd td.diff-addedline,.fd ins{background:#dbf4d6;color:#174c2a}
+.fd ins{text-decoration:none}
+.fd-snapshots{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.fd pre,.fd-note{white-space:pre-wrap;overflow-wrap:anywhere}
+.fd pre{padding:8px;background:#f3f5ee}
+.fd-action,.fd-secondary{font:750 14px Manrope,system-ui,sans-serif;min-height:42px;padding:8px 11px;border-radius:6px;cursor:pointer;margin:0 5px 5px 0}
+.fd-action{color:#fff;background:var(--green);border:1px solid var(--green)}
+.fd-action:disabled{opacity:.55;cursor:default}
+.fd-secondary{border:1px solid #849987;background:#fff;color:var(--green)}
+@media(max-width:850px){.fd-workspace{grid-template-columns:1fr}}
